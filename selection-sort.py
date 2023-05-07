@@ -12,8 +12,12 @@ class Solution:
         arr[min_index] = temp
         return arr[i]
     
-    def selectionSort(self, arr,n):
+    def selectionSort(self, arr):
         #code here
-        for i in range(n):
+        for i in range(len(arr)):
             self.select(arr,i)
         return arr
+my_solution = Solution()
+arr = [10,2,3,-4,0]
+
+print(my_solution.selectionSort(arr))
